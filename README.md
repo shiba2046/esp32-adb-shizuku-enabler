@@ -60,7 +60,7 @@ ADB 激活要求 **ESP32 做 USB Host（主机）**，**Android 手机做 USB De
 ### 方式一：使用 Arduino IDE（macOS / Windows）
 1. 在 `Settings -> Additional boards manager URLs` 添加乐鑫官方源：
    ```text
-   [https://espressif.github.io/arduino-esp32/package_esp32_index.json](https://espressif.github.io/arduino-esp32/package_esp32_index.json)
+   https://espressif.github.io/arduino-esp32/package_esp32_index.json
    ```
 2. 在 **Boards Manager** 中安装 `esp32 by Espressif Systems`（3.0.x 或最新版）。
 3. 在 **Library Manager** 中安装 **`EspUsbHost`**（作者 `tanakamasayuki`）。
@@ -77,7 +77,7 @@ ADB 激活要求 **ESP32 做 USB Host（主机）**，**Android 手机做 USB De
 # 1. 安装 CLI 与依赖（仅首次）
 winget install ArduinoSA.CLI
 arduino-cli config init
-arduino-cli config add board_manager.additional_urls [https://espressif.github.io/arduino-esp32/package_esp32_index.json](https://espressif.github.io/arduino-esp32/package_esp32_index.json)
+arduino-cli config add board_manager.additional_urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
 arduino-cli core update-index
 arduino-cli core install esp32:esp32
 arduino-cli lib install EspUsbHost
